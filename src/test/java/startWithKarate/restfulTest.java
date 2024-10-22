@@ -4,24 +4,25 @@ import com.intuit.karate.junit5.Karate;
 
 public class restfulTest {
      @Karate.Test
-    Karate testLogin() {
-        return Karate.run("login.post.feature").relativeTo(getClass());
+    Karate testgetPet() {
+        return Karate.run("get.Pet.by.status.feature").relativeTo(getClass());
     }
 
     @Karate.Test
-    Karate testFailDeleteBooking() {
-        return Karate.run("fail.delete.booking.feature").relativeTo(getClass());
+    Karate testPostUser() {
+        return Karate.run("post.new.User.feature").relativeTo(getClass());
     }
+       /* 
     @Karate.Test
-    Karate testDeleteBooking() {
-        return Karate.run("delete.booking.feature").relativeTo(getClass());
+    Karate testDeletePet() {
+        return Karate.run("delete.pet.feature").relativeTo(getClass());
     }
-
+*/
     @Karate.Test
-    Karate testFailPutBooking() {
-        return Karate.run("fail.put.booking.feature").relativeTo(getClass());
+    Karate testPutUser() {
+        return Karate.run("put.user.feature").relativeTo(getClass());
     }
-
+/*
     @Karate.Test
     Karate testPutBooking() {
         return Karate.run("put.booking.feature").relativeTo(getClass());
@@ -30,6 +31,6 @@ public class restfulTest {
     @Karate.Test
     Karate testGetListBookings() {
         return Karate.run("get.list.bookings.feature").relativeTo(getClass());
-    }
+    }*/
 
 }

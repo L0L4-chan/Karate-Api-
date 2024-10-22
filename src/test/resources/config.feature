@@ -1,6 +1,5 @@
 Feature: Configuration for tests
 
-  Scenario: Initialize variables
-    * def token = null  # Inicializa la variable token
-    
+  Scenario: Define base URL
+    * def dom = 'https://petstore.swagger.io/v2'
   
